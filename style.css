@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Overpass&family=Poppins:wght@200;400;500;600;700&display=swap");
+
+:root {
+  /*### Primary*/
+
+  --Blue: hsl(223, 87%, 63%);
+
+  /*### Secondary*/
+
+  --PaleBlue: hsl(223, 100%, 88%);
+  --LightRed: hsl(354, 100%, 66%);
+
+  /*### Neutral*/
+
+  --Gray: hsl(0, 0%, 59%);
+  --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  font-size: 1.25rem;
+  font-family: Libre Franklin;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+main {
+  display: grid;
+  place-content: center;
+}
+.wrapper {
+  text-align: center;
+  line-height: 50px;
+}
+.wrapper .launching {
+  font-size: 38px;
+  color: var(--Gray);
+}
+.wrapper .launching span {
+  font-weight: 700;
+  color: black;
+}
+.form {
+  margin-top: 20px;
+  display: flex;
+  display: block;
+}
+.form .email {
+  padding: 10px;
+  border-radius: 20px;
+  width: 300px;
+  border: 1px solid var(--Gray);
+  margin-right: 10px;
+}
+.form .email::placeholder {
+  color: var(--Gray);
+  opacity: 0.4;
+}
+.form button {
+  text-decoration: none;
+  background-color: var(--Blue);
+  padding: 10px 50px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 15px 5px rgba(200, 200, 200, 0.92);
+  box-shadow: 3px 3px 15px 5px rgba(200, 200, 200, 0.92);
+}
+.form-error {
+  margin-top: 20px;
+  display: flex;
+  display: none;
+}
+.form-error .email-error {
+  padding: 10px;
+  border-radius: 20px;
+  width: 300px;
+  border: 1px solid red;
+  margin-right: 10px;
+}
+.form-error .email-error::placeholder {
+  color: var(--Gray);
+  opacity: 0.4;
+}
+.form-error button {
+  text-decoration: none;
+  background-color: var(--Blue);
+  padding: 10px 50px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 15px 5px rgba(200, 200, 200, 0.92);
+  box-shadow: 3px 3px 15px 5px rgba(200, 200, 200, 0.92);
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 5px;
+  display: none;
+}
+.image {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+}
+footer .logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+footer .logo img {
+  width: 30px;
+  margin-right: 10px;
+}
+.copyright {
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 350px;
+    margin-left: 30px;
+  }
+
+  .form {
+    width: 350px;
+    margin-left: 60px;
+  }
+  .form .email {
+    margin-bottom: 20px;
+  }
+  .form button {
+    padding: 10px 113px;
+  }
+  .form-error {
+    width: 350px;
+    margin-left: 60px;
+  }
+  .form-error .email-error {
+    margin-bottom: 50px;
+  }
+  .form-error button {
+    padding: 10px 113px;
+  }
+  .error {
+    position: relative;
+    bottom: 80px;
+    margin: 0 auto;
+  }
+  .image img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+}

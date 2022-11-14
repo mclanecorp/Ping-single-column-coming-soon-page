@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ping single column coming soon page</title>
+  </head>
+  <body>
+    <header>
+      <h1>PING.</h1>
+    </header>
+    <main>
+      <div class="wrapper">
+        <p class="launching">We are launching <span>soon!</span></p>
+        <p>Subscribe and get notified</p>
+      </div>
+      <div class="form">
+        <input
+          type="text"
+          id="email"
+          class="email"
+          placeholder="Your email adress..."
+        />
+        <!-- <a href="#">Notify me</a>-->
+        <button type="submit" onclick="validate()">Notify me</button>
+      </div>
+      <div class="form-error">
+        <input
+          type="text"
+          id="email"
+          class="email-error"
+          placeholder="Your email adress..."
+        />
+        <!--<a href="#">Notify me</a>-->
+        <button type="submit" onclick="validate()">Notify me</button>
+      </div>
+      <p class="error">Please provide a valid email address</p>
+      <div class="image">
+        <img
+          src="./images/illustration-dashboard.png"
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
+      <footer>
+        <div class="logo">
+          <img src="./images/logo-facebook.svg" alt="facebook" />
+          <img src="./images/logo-twitter.svg" alt="twitter" />
+          <img src="./images/logo-instagram.svg" alt="instagram" />
+        </div>
+        <p class="copyright">@ Copyright ping. All rights reserved</p>
+      </footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
